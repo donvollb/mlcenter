@@ -2,7 +2,7 @@
 A lightweight R package for centering multilevel data.
 
 ## Overview
-This package contains two functions for centering multilevel data. The first function, `cgm`, grand mean centers level 2 variables. The second function, `cwc`, group mean centers level 1 variables. This is equal to person mean centering when data is nested in person. It also contains an example dataset `ml_example`.
+This package contains two functions for centering multilevel data. The first function, `cgm`, grand mean centers level 2 variables. The second function, `cwc`, group mean centers level 1 variables. This is equal to person mean centering when data points are nested in persons. It also contains an example dataset `ml_example`.
 
 ## Installation
 You can install mlcenter from GitHub with:

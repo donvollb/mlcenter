@@ -3,7 +3,7 @@ Title: Centering in Multilevel Data
 Version: 1.0
 Authors@R: 
     person("Dominik", "Vollbracht", , "d.vollbracht@rptu.de", role = c("aut", "cre"))
-Description: This ligthweight package contains functions for centering multilevel data. This applies to group mean centering at level 1 (or person mean centering if data is nested in person) and grand mean centering at level 2.
+Description: This ligthweight package contains functions for centering multilevel data. This applies to group mean centering at level 1 (or person mean centering if data points are nested in persons) and grand mean centering at level 2.
 License: use_mit_license()
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
