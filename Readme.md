@@ -22,7 +22,7 @@ var_L2_cgm <- cgm(var = ml_example$var_L2, id = ml_example$ID)
 ```
 In this example, `var_L2_cgm` will contain the grand mean centered version of `var_L2` from `ml_example`. 
 
-### Centering a Level 1 Variable
+### Centering a Level 1 Variable Within Clusters
 The `cwc` function is used to group mean center level 1 variables within clusters. This is often referred to as person mean centering when data is nested in individuals.
 
 ```r
