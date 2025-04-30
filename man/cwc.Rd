@@ -4,12 +4,14 @@
 \alias{cwc}
 \title{Centering Within Clusters}
 \usage{
-cwc(var, id)
+cwc(var, id, warn_zero_var = TRUE)
 }
 \arguments{
 \item{var}{The variable to be centered.}
 
 \item{id}{The ID variable.}
+
+\item{warn_zero_var}{Whether to warn about clusters with zero variance.}
 }
 \value{
 The centered variable.
@@ -18,6 +20,6 @@ The centered variable.
 This function group mean centers level 1 variables in multilevel data. cwc stands for centered within clusters. When data is nested in person, this is equal to person mean centering.
 }
 \examples{
-var_L1_cwc <- cwc(var = ml_example$var_L1, id = ml_example$ID)
+var_L1_cwc <- cwc(var = ml_example$var_L1, id = ml_example$ID, warn_zero_var = TRUE)
 
 }
