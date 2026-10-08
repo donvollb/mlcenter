@@ -34,7 +34,7 @@ cgm <- function(var, id) {
   
   # single-pass over each cluster: get its constant value and its variance
   stats <- lapply(splt, function(x) {
-    x0  <- na.omit(x)
+    x0  <- stats::na.omit(x)
     val <- if (length(x0) >= 1) x0[1] else NA_real_
     v   <- if (length(x0) > 1) var(x0)     else 0
     c(val = val, var = v)
@@ -44,7 +44,7 @@ cgm <- function(var, id) {
   per_id    <- vapply(stats, `[[`, numeric(1), "val")
   var_by_id <- vapply(stats, `[[`, numeric(1), "var")
   
-  # ensure constant‐within‐ID
+  # ensure constant-within-ID
   bad <- names(var_by_id)[var_by_id > 0]
   if (length(bad) > 1e-16) {
     stop(

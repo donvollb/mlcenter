@@ -2,7 +2,7 @@
 
 A lightweight R package for centering multilevel data.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)
 
 ---
 
@@ -23,8 +23,8 @@ You can install **mlcenter** from GitHub with:
 
 ```r
 # Install the development version from GitHub
-install.packages("devtools") # only if devtools is not already installed.
-devtools::install_github("donvollb/mlcenter")
+install.packages("pak") # only if pak is not already installed
+pak::pak("donvollb/mlcenter")
 ```
 
 ---
@@ -53,5 +53,5 @@ Here, `var_L1_cwc` will contain the group mean centered version of `var_L1` from
 
 ## License
 
-This package is released under the [MIT License](LICENSE).
+This package is released under the [MIT License](LICENSE.md).
 
